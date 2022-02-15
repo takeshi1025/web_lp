@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="confirm-btn2 col-md-2 mt-5">
+      <%= form_for @toppage, url: back_path do |f| %>
+        <%= f.hidden_field :name %>
+        <%= f.hidden_field :email %>
+        <%= f.hidden_field :phone_number %>
+        <%= f.hidden_field :subject %>
+        <%= f.hidden_field :message %>
+        <div><%= f.submit '入力画面に戻る', class:'btn btn-primary' %></div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="confirmation col-md-6 offset-md-3 text-center">
+      <p>入力確認画面</p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <table class="table col-md-6 offset-md-3">
+      <tbody>
+        <tr>
+          <td class="text-center" style="width: 30%;">お名前</td>
+          <td><%= @toppage.name %></td>
+        </tr>
+        <tr>
+          <td class="text-center" style="width: 30%;">メールアドレス</td>
+          <td><%= @toppage.email %></td>
+        </tr>
+        <tr>
+          <td class="text-center" style="width: 30%;">電話番号</td>
+          <td><%= @toppage.phone_number %></td>
+        </tr>
+        <tr>
+          <td class="text-center">メッセージ</td>
+          <td style="white-space: pre-wrap;"><%= @toppage.message %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="confirm-btn col-md-4 offset-md-8">
+      <%= form_for(@toppage) do |f| %>
+        <%= f.hidden_field :name %>
+        <%= f.hidden_field :email %>
+        <%= f.hidden_field :phone_number %>
+        <%= f.hidden_field :subject %>
+        <%= f.hidden_field :message %>
+        <div><%= f.submit '送信', class:'btn btn-primary' %></div>
+      <% end %>
+    </div>
+  </div>
+</div>
+

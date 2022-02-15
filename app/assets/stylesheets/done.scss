@@ -1,0 +1,37 @@
+.completion p {
+  margin-top: 150px;
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+}
+
+.inquiry-area {
+  margin-top: 50px;
+  border: 1px solid;
+  border-color:black;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.border-top {
+  padding-top: 50px;
+  border-bottom: 1.5px solid;
+  border-color: red;
+}
+
+.inquiry-text {
+  padding: 100px;
+  font-size: 18px;
+}
+
+.border-bottom {
+  padding-top: 50px;
+  border-top: 1.5px solid;
+  border-color: red;
+}
+
+@media screen and (max-width: 768px) {
+
+  .inquiry-text p {
+    font-size: 12px;
+  }
+}
